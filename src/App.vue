@@ -62,13 +62,13 @@ export default {
       this.restart = !this.restart
       this.stop = !this.stop
       this.continue = !this.continue
-      this.save = !this.save
+      // this.save = !this.save
       this.countInc()
     },
     countInc() {
       this.interval = setInterval(() => {
         this.count++
-      }, 100)
+      }, 1000)
     },
     formatTime() {
       const minutes = `0${Math.floor(this.count / 60)}`.slice(-2)
